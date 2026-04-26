@@ -1,0 +1,8 @@
+# Docker secrets — never commit credentials to git
+secrets/
+
+# Environment variables — never commit these
+srcs/.env
+
+# macOS metadata
+.DS_Store
