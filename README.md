@@ -96,7 +96,7 @@ make re          # full clean rebuild
 
 ### Credentials
 
-All passwords are in the `secrets/` directory (gitignored). Change the values before deploying on a shared machine.
+All passwords should be in the a `secrets/` directory (gitignored).
 
 | File | Content |
 |---|---|
@@ -129,4 +129,4 @@ GitHub Copilot (Claude Sonnet 4.6) was used during this project for:
 - **Shell scripts** — drafting `init.sh` and `wp-install.sh` entrypoint patterns (PID 1 handoff via `exec`, secret reading, readiness loops).
 - **Documentation** — writing and structuring README, USER_DOC, and DEV_DOC files.
 
-All generated content was reviewed, understood, and adjusted before inclusion. The correctness of package names, paths, and runtime behaviour must be verified by running the containers on an actual VM.
+All generated content was reviewed, understood, and adjusted before inclusion. The correctness of package names, paths, and runtime behaviour was verified by running the containers on an actual VM.
