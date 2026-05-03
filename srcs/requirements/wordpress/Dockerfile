@@ -37,7 +37,7 @@ RUN curl -fsSL -o /usr/local/bin/wp-cli.phar \
     chmod +x /usr/local/bin/wp-cli.phar
 
 # Create a thin 'wp' wrapper
-RUN printf '#!/bin/sh\nexec php83 -d memory_limit=256MB /usr/local/bin/wp-cli.phar "$@"\n' \
+RUN printf '#!/bin/sh\nexec php83 -d memory_limit=256M /usr/local/bin/wp-cli.phar "$@"\n' \
         > /usr/local/bin/wp && \
     chmod +x /usr/local/bin/wp
 
