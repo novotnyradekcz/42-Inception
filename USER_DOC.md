@@ -114,7 +114,7 @@ curl -k -v https://rnovotny.42.fr 2>&1 | grep -E "SSL|TLS|HTTP"
 curl -k --tlsv1.1 --tls-max 1.1 https://rnovotny.42.fr
 
 # Connect to MariaDB from inside the container
-docker exec -it mariadb mariadb -u wpuser -pWpDbPass42 wordpress
+docker exec -it mariadb mariadb -u wpuser -p <password from secrets/db_password.txt> wordpress
 ```
 
 ### Volume data location
