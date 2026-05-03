@@ -27,7 +27,7 @@ sudo usermod -aG docker $USER   # re-login after this
 | `secrets/db_root_password.txt` | MariaDB `root` password | **No** — gitignored |
 | `secrets/credentials.txt` | WordPress admin + user passwords | **No** — gitignored |
 
-After cloning the repository you must recreate these files manually. Reference the `.env.example` section below or copy from a secure store.
+After cloning the repository you must recreate these files manually. Reference the template below or copy from a secure store.
 
 #### `srcs/.env` template
 
@@ -181,7 +181,7 @@ Inception/
 │   ├── db_password.txt
 │   └── db_root_password.txt
 └── srcs/
-    ├── .env                          ← gitignored — never commit
+    ├── .env                          ← gitignored — better not to commit
     ├── docker-compose.yml
     └── requirements/
         ├── nginx/

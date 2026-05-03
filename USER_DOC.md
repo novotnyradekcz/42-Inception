@@ -78,7 +78,7 @@ Non-sensitive configuration (domain name, DB name, WP usernames, emails) is in `
 | `rnovotny_wp` | Administrator | `admin@rnovotny.42.fr` |
 | `rnovotny` | Author | `rnovotny@rnovotny.42.fr` |
 
-> **Security reminder:** The `secrets/` directory and `srcs/.env` are listed in `.gitignore` and must never be committed to a public repository.
+> **Security reminder:** The `secrets/` directory and `srcs/.env` are listed in `.gitignore` and must never be committed to a public repository (our `.env` does not contain sensitive data but best practice is not to commit it).
 
 ---
 
